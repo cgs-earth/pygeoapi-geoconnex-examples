@@ -1,6 +1,8 @@
-# Guidance materials to add data to geoconnex.us and the Network-Linked Data Index
 
-Interim guidance available from this [presentation](https://github.com/internetofwater/gwtc2022-workshop/raw/main/geoconnex_nldi_guidance.pptx).
 
-Final guidance under development at this [website](https://docs.geoconnex.us/quickstart/intro.html).
- 
+## Install
+Installation is quite simple
+```
+docker run -d -p 5000:80 --restart always internetofwater/pygeoapi-geoconnex:latest
+docker run -d --name watchtower -v /var/run/docker.sock:/var/run/docker.sock --restart always containrrr/watchtower -i 30 --cleanup
+```
