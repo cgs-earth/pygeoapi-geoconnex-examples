@@ -21,7 +21,7 @@
 		"https://www.opengis.net/def/schema/hy_features/hyf/HY_HydroLocation"
 	],
         "name": "{{ data.PROGRAM_SITE_ID }}",
-	"description": "Monitoring Location at {{ data.LOCATION_DESCRIPTION }}",
+	"description": "{{ data.SITE_TYPE }} at {{ data.LOCATION_DESCRIPTION }}",
         "schema:provider": "{{ data.PROGRAM_NAME }}",
 	"hyf:HY_HydroLocationType": "hydrometricStation",
 	"sosa:isFeatureOfInterestOf": {
