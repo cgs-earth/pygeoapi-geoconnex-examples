@@ -22,7 +22,7 @@
 	],
         "name": "{{ data.PROGRAM_SITE_ID }}",
 	"description": "Monitoring Location at {{ data.LOCATION_DESCRIPTION }}",
-        "schema:provider": "{{ data.PROGRAM_NAME }}"
+        "schema:provider": "{{ data.PROGRAM_NAME }}",
 	"hyf:HY_HydroLocationType": "hydrometricStation",
 	"sosa:isFeatureOfInterestOf": {
              "schema:url": "{{ data.URL_SITE }}",
