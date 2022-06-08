@@ -12,8 +12,9 @@ pygeoapi is a general open-source geospatial web server that implements several 
 
 Deploying involves creating a pygeoapi configuration yml file, with blocks for each feature collection, as well as a JSON-LD feature template.
 
-###
+### Example data
 
+For our example data, we are using the California Department of Water Resources (DWR) Groundwater Sustainability Plan (GSP) Monitoring [dataset](https://data.ca.gov/dataset/gsp-monitoring-data), and in particular, its "Existing Sites" feature collection.
 
 ### Deploy for local development
 
