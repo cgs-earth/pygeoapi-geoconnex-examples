@@ -30,7 +30,8 @@
              "schema:format": [
                  "application/json"
              ]
-        }, 
+        },
+        "schema:geoWithin": "https://geoconnex.us/ref/states/06",
         "geo": {{ data['schema:geo'] | to_json | safe }},
         "gsp:hasGeometry": {{ data['gsp:hasGeometry'] | to_json }}
 }
