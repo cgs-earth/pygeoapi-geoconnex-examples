@@ -22,21 +22,6 @@
 	],
     "name": "{{ data.GNIS_NAME }}",
 	"description": "Monitoring Location at {{ data.GNIS_NAME }}",
-	"hyf:referencedPosition": [
-		{
-			"hyf:HY_IndirectPosition": {
-				"hyf:distanceExpression": {
-					"hyf:HY_DistanceFromReferent": {
-						"hyf:interpolative": {{ data.NHDPv2Measure }}
-					}
-				},
-				"hyf:distanceDescription": {
-					"hyf:HY_DistanceDescription": "upstream"
-				},
-				"hyf:linearElement": "https://geoconnex.us/nhdplusv2/reachcode/{{ data.NHDPv2ReachCode }}"
-			}
-		}
-	],
 	"hyf:HY_HydroLocationType": "hydrometricStation",
 	"schema:geoWithin": "{{ data.states }}",
 	"schema:geoWithin": "{{ data.huc8 }}",
