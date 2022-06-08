@@ -1,16 +1,22 @@
-## Demonstrating how to use pygeoapi to publish landing content for the geoconnex system
+# Using pygeoapi to publish data to Geoconnex 
 
-This repository includes a demonstration deployment and explanations for how to use the [internetofwater/pygeoapi](https://github.com/internetofwater/pygeoapi) fork of [pygeoapi](https://pygeoapi.io) to publish [landing content for individual features](https://docs.ogc.org/per/20-067.html#landingContent) within geospatial datasets suitable for harvesting by the [geoconnex.us](https://docs.geoconnex.us/principles/genprin.html) system.
+This repository is a demonstration and explanation for how to use [pygeoapi](https://pygeoapi.io) to publish [landing content for individual features](https://docs.ogc.org/per/20-067.html#landingContent) within geospatial datasets suitable for harvesting by the [geoconnex.us](https://docs.geoconnex.us/principles/genprin.html) system.
 
-pygeoapi is a general open-source geospatial web server that implements several OGC-API standards. We leverage the [OGC-API Features](https://ogcapi.ogc.org/features/) standard, which gives every individual feature within a geospatial vector dataset a unique URL with an associated HTML landing page and GeoJSON response. We also leverage some add-ons that enable the injection of templated JSON-LD into the script headers of the HTML pages. Both the HTML pages and JSON-LD responses are generated using jinja templates. This demonstration deployment shows how to use pygeoapi to generate landing pages for the following data sources:
+## Getting started with pygeoapi & docker
 
-1. A (local or periodically downloaded) csv file with latitude and longitude
-2. A (local or periodically downloaded) geojson file 
-3. A (local or periodically downloaded) geopackage file 
-4. An ESRI FeatureServer or MapServer endpoint
-5. A CKAN Data API endpoint
+pygeoapi is a general open-source geospatial web server that implements several OGC-API standards. We leverage the [OGC-API Features](https://ogcapi.ogc.org/features/) standard, which gives each individual feature within a geospatial vector dataset a unique URL with an associated HTML landing page, GeoJSON response, and JSON-LD response. In addition to the [providers](https://docs.pygeoapi.io/en/latest/data-publishing/ogcapi-features.html) offered by pygeoapi core, [internetofwater/pygeoapi](https://github.com/internetofwater/pygeoapi) fork includes OGC-API Feature providers for ESRI FeatureServer, CKAN Data API, and SODA API. Additionlly, the fork includes add-ons that enable the injection of custom templated JSON-LD into the script headers of the HTML pages. Both the HTML pages and JSON-LD responses are generated using jinja templates.
 
-Deploying involves creating a pygeoapi configuration yml file, with blocks for each feature collection, as well as a JSON-LD feature template.
+This demonstration uses [Docker](https://www.docker.com/) to deploy pygeoapi with landing pages generated for data from the following sources:
+
+1. **CSV Provider:** A (local or periodically downloaded) csv file with latitude and longitude
+2. **GeoJSON Provider:** A (local or periodically downloaded) geojson file 
+3. **SQLiteGPKG Provider:** A (local or periodically downloaded) geopackage file 
+4. **ESRI Provider:** An ESRI FeatureServer or MapServer endpoint
+5. **CKAN Provider:** A CKAN Data API endpoint
+
+pygeoapi can be deployed from the Dockerfile, producing an image with data included as a layer, or with docker compose and volume binding. The only pre-requsite to publish data to geoconnex is a valid JSON-LD object. The only pre-requisite to deploy pygeoapi is a valid pygeoapi configurtion file, with blocks for each feature collection. 
+
+As such, the only requirements to publish data to crawlable by geoconnex is a valid pygeoapi configuration file with a correct JSON-LD feature template. This repository has been setup to satisfy both requirements out of the box. 
 
 ### Example data
 
