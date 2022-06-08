@@ -30,7 +30,7 @@
              "schema:format": [
                  "application/json"
              ]
-        } 
+        }, 
         "geo": {{ data['schema:geo'] | to_json | safe }},
         "gsp:hasGeometry": {{ data['gsp:hasGeometry'] | to_json }}
 }
