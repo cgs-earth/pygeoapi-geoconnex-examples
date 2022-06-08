@@ -16,6 +16,12 @@ Deploying involves creating a pygeoapi configuration yml file, with blocks for e
 
 For our example data, we are using the California Department of Water Resources (DWR) Groundwater Sustainability Plan (GSP) Monitoring [dataset](https://data.ca.gov/dataset/gsp-monitoring-data), and in particular, its "Existing Sites" feature collection.
 
+- link to CSV download
+- link to geojson file (stored in this repository
+- link to geopackage version (stored in this repository)
+- ESRI feature service: https://services.arcgis.com/aa38u6OgfNoCkTJ6/ArcGIS/rest/services/GSP_Monitoring_Data/FeatureServer/0
+- CKAN endpoint: https://data.ca.gov/api/3/action/datastore_search?resource_id=72612518-e45b-4900-9cab-72b8de09c57d
+
 ### Deploy for local development
 
 docker-compose, explain volume mapping for jsonld templates
