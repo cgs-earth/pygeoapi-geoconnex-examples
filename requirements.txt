@@ -1,0 +1,4 @@
+pygeoapi
+pygeofilter
+requests
+SPARQLWrapper

@@ -1,6 +1,7 @@
-FROM internetofwater/pygeoapi:latest
-# test2
-#add requirements and mods
-COPY ./pygeoapi.config.yml /pygeoapi/local.config.yml
-COPY ./jsonld /pygeoapi/pygeoapi/templates/jsonld
-COPY ./data /data
+FROM geopython/pygeoapi:latest
+
+ADD . /pygeoapi_plugins
+
+RUN pip3 install -e /pygeoapi_plugins
+
+ENTRYPOINT [ "/entrypoint.sh" ]
