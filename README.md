@@ -131,7 +131,8 @@ Notice how `"@id"` is the URL for the API call. This can be configured to be an 
         providers:
             - type: feature
               name: CKAN
-              data: https://data.ca.gov/api/3/action/datastore_search?resource_id=72612518-e45b-4900-9cab-72b8de09c57d
+              data: https://data.ca.gov/api/3/action/datastore_search
+              resource_id: 72612518-e45b-4900-9cab-72b8de09c57d
               id_field: EXISTING_INFO_ID
               uri_field: EXAMPLE_URI_FIELD_RENAME_AS_NECESSARY
               x_field: LONGITUDE
