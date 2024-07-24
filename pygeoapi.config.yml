@@ -33,7 +33,7 @@ server:
     bind:
         host: localhost #change to your hostname if running your own instance
         port: 5000
-    url: http://localhost:5000 # change to host URL if running your own instance
+    url: ${PYGEOAPI_URL} # change to host URL if running your own instance
     mimetype: application/json; charset=UTF-8
     encoding: utf-8
     gzip: true
@@ -92,7 +92,7 @@ resources:
             - type: application/html
               rel: canonical
               title: data source
-              href: https://data.ca.gov/dataset/gsp-monitoring-data/resource/72612518-e45b-4900-9cab-72b8de09c57d
+              href: https://data.ca.gov/dataset/gsp-monitoring-data/resource/ab3f524c-850f-40e4-b27a-6cae7154add5
               hreflang: en-US
         extents:
             spatial:
@@ -120,7 +120,7 @@ resources:
             - type: application/html
               rel: canonical
               title: data source
-              href: https://data.ca.gov/dataset/gsp-monitoring-data/resource/72612518-e45b-4900-9cab-72b8de09c57d
+              href: https://data.ca.gov/dataset/gsp-monitoring-data/resource/ab3f524c-850f-40e4-b27a-6cae7154add5
               hreflang: en-US
         extents:
             spatial:
@@ -145,7 +145,7 @@ resources:
             - type: application/html
               rel: canonical
               title: data source
-              href: https://data.ca.gov/dataset/gsp-monitoring-data/resource/72612518-e45b-4900-9cab-72b8de09c57d
+              href: https://data.ca.gov/dataset/gsp-monitoring-data/resource/ab3f524c-850f-40e4-b27a-6cae7154add5
               hreflang: en-US
         extents:
             spatial:
@@ -171,7 +171,7 @@ resources:
             - type: application/html
               rel: canonical
               title: data source
-              href: https://data.ca.gov/dataset/gsp-monitoring-data/resource/72612518-e45b-4900-9cab-72b8de09c57d
+              href: https://data.ca.gov/dataset/gsp-monitoring-data/resource/ab3f524c-850f-40e4-b27a-6cae7154add5
               hreflang: en-US
         extents:
             spatial:
@@ -196,7 +196,7 @@ resources:
             - type: application/html
               rel: canonical
               title: data source
-              href: https://data.ca.gov/dataset/gsp-monitoring-data/resource/72612518-e45b-4900-9cab-72b8de09c57d
+              href: https://data.ca.gov/dataset/gsp-monitoring-data/resource/ab3f524c-850f-40e4-b27a-6cae7154add5
               hreflang: en-US
         extents:
             spatial:
@@ -209,7 +209,7 @@ resources:
             - type: feature
               name: CKAN
               data: https://data.ca.gov/api/3/action/datastore_search
-              resource_id: 72612518-e45b-4900-9cab-72b8de09c57d
-              id_field: EXISTING_INFO_ID
+              resource_id: ab3f524c-850f-40e4-b27a-6cae7154add5
+              id_field: SITE_CODE
               x_field: LONGITUDE
               y_field: LATITUDE
