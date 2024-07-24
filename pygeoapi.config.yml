@@ -210,6 +210,6 @@ resources:
               name: CKAN
               data: https://data.ca.gov/api/3/action/datastore_search
               resource_id: ab3f524c-850f-40e4-b27a-6cae7154add5
-              id_field: EXISTING_INFO_ID
+              id_field: SITE_CODE
               x_field: LONGITUDE
               y_field: LATITUDE
