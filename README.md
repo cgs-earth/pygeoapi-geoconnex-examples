@@ -26,7 +26,7 @@ For our example data, we are using the California Department of Water Resources 
 
 ### Deploying locally
 
-pygeoapi can be deployed from the Dockerfile, building an image with data included as a layer, or with docker compose and volume binding. The only pre-requisite to deploy pygeoapi is a valid pygeoapi configurtion file, with blocks for each feature collection. The only pre-requsite to publish data to geoconnex is a valid JSON-LD object and a PID redirect in geoconnex namespace.
+pygeoapi can be deployed from the Dockerfile, building an image with data included as a layer, or with docker compose and volume binding. The only pre-requisite to deploy pygeoapi is a valid pygeoapi configuration file, with blocks for each feature collection. The only pre-requsite to publish data to geoconnex is a valid JSON-LD object and a PID redirect in geoconnex namespace.
 
 As such, the only requirements to publish data to crawlable by geoconnex is a valid pygeoapi configuration file with a correct JSON-LD feature template. This repository has been setup to satisfy both of these prerequisites out of the box. 
 
@@ -105,7 +105,7 @@ As you explore the feature collections, notice the individual feature HTML resou
 }
 ```
 
-Notice how `"@id"` is the URL for the API call. This can be configured to be an exteral URI instead, such as those [minted with geoconnex.us](https://docs.geoconnex.us/contributing/pids.html). You can then add these identifiers as a field in your data, whether in a local file or at an ESRI or CKAN api endpoint, and then specify this field as the `uri_field:` in the pygeoapi configuration yml file in the `providers:` block, like so:
+Notice how `"@id"` is the URL for the API call. This can be configured to be an external URI instead, such as those [minted with geoconnex.us](https://docs.geoconnex.us/contributing/pids.html). You can then add these identifiers as a field in your data, whether in a local file or at an ESRI or CKAN api endpoint, and then specify this field as the `uri_field:` in the pygeoapi configuration yml file in the `providers:` block, like so:
 
 ```
     demo-ckan:
